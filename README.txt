@@ -20,9 +20,8 @@ Build:
   ./build.sh
 
 PM2:
-  pm2 delete iwfcam-1
-  pm2 start ecosystem.config.cjs
+  pm2 start ecosystem.config.cjs --name iwfcam-1
   pm2 save
 
 RTSP:
-  rtsp://192.168.1.14:7554/cam
+  rtsp://192.168.1.12:7554/cam
